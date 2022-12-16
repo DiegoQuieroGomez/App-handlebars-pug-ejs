@@ -1,0 +1,35 @@
+<%- include('./index') -%>
+
+<h1>Listado de Productos</h1>
+<div class="container">
+    <% if(productos.length > 0) { %>
+    <div class="table-responsive">
+            <table class="table table-dark table-striped" style="width: 80%;">
+                <tr>
+                    <th>Nombre Producto</th>
+                    <th>Precio</th>
+                    <th>Foto Producto</th>
+                </tr>
+                <br>
+                <% productos.forEach(function(producto){ %>
+                    <tr>
+                        <td><%=producto.nombre%></td>
+                        <td>$ <%=producto.precio%></td>
+                        <td><%=producto.url%></td>
+                    </tr>
+                <% }); %>
+            </table>
+    </div>
+    
+    <%} else { %>
+
+        <h2>Sin productos registrados</h2>
+
+    <%}%>
+</div>
+
+<div class="container">
+    <form action="/" method="get">
+        <button type="submit">Ingresar productos</button>
+    </form>
+</div>

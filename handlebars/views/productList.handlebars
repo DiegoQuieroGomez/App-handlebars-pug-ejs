@@ -1,28 +1,27 @@
 <h1>Listado de Productos</h1>
-{{#if productos.length}}
-
-<table class="table table-dark table-striped">
-    <tr>
-        <th>Nombre Producto</th>
-        <th>Precio</th>
-        <th>Foto Producto</th>
-    </tr>
-    <br>
+<div class="container">
+    {{#if productos.length}}
+        <table class="table table-dark table-striped">
+            <tr>
+                <th>Nombre Producto</th>
+                <th>Precio</th>
+                <th>Foto Producto</th>
+            </tr>
+        <br>
     {{#each productos}}
-    <tr>
-        <td>{{this.nombre}}</td>
-        <td>$ {{this.precio}}</td>
-        <td>{{this.url}}</td>
-    </tr>
+            <tr>
+                <td>{{this.nombre}}</td>
+                <td>$ {{this.precio}}</td>
+                <td>{{this.url}}</td>
+            </tr>
     {{/each}}
-
-</table>
-{{else}}
-
-<h2>Sin productos registrados</h2>
-{{/if}}
-
-<div class="">
+        </table>
+    {{else}}
+        <h2>Sin productos registrados</h2>
+    {{/if}}
+</div>
+<br>
+<div class="container">
     <form action="/" method="get">
         <button type="submit">Ingresar productos</button>
     </form>
