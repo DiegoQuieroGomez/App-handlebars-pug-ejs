@@ -1,0 +1,33 @@
+<h1 style="color: blue">Registro de Productos</h1>
+<div class="container">
+    <fieldset style="width: 20px;">
+        <form action="/productos" method="post">
+
+            <legend style="color: blue">Formulario de ingreso</legend>
+            <div class="mb-3">
+                <label for="nombreProducto" class="form-label">Nombre Producto</label>
+                <br>
+                <input type="text" class="form-control" name="nombre" placeholder="Nombre Producto" required>
+            </div>
+            <div class="mb-3">
+                <label for="precio" class="form-label">Precio</label>
+                <br>
+                <input type="number" class="form-control" name="precio" placeholder="$$" required>
+            </div>
+            <div class="mb-3">
+                <label for="url" class="form-label">Foto producto</label>
+                <br>
+                <input type="text" class="form-control" name="url" placeholder="URL" required>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+    </fieldset>
+</div>
+<div class="container" style="margin: 20px;">
+    <form action="/productos" method="get">
+    <button type="submit" class="">Ver listado de productos</button>
+    </form>
+
+</div>

@@ -1,0 +1,24 @@
+h1 Listado de Productos
+
+if productos.length > 0
+
+    table(class="table table-dark table-striped")
+        tr
+            th Nombre Producto
+            th Precio
+            th Foto Producto
+        br
+        each val in productos
+            tr
+                td: =  val.nombre
+                td: =  val.precio
+                td: =  val.url 
+
+else 
+    h2 Sin productos registrados
+
+
+div(class="")
+    form(action="/" method="get")
+        button(type="submit") Ingresar productos
+

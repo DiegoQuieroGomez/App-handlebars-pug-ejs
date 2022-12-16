@@ -1,0 +1,33 @@
+html 
+    head 
+        tittle(style="color:blue") Ingreso de productos
+    body 
+        h1 Registro de Productos
+    div 
+        
+        form(action="/productos" method="post")
+            legend(style="color: blue") Formulario de ingreso
+            div.mb-3
+                label.form-label(for="nombreProducto") Nombre Producto
+                br
+                input.form-control(type="text" name="nombre" placeholder="Nombre Producto" required)
+          
+            div.mb-3
+                label.form-label(for="precio") Precio
+                br
+                input.form-control(type="number" name="precio" placeholder="$$" required)
+           
+            div.mb-3
+                label.form-label(for="url") Foto producto
+                br
+                input.form-control(type="text" name="url" placeholder="URL" required)
+            br
+            button.btnbtn-primary(type="submit") Enviar
+        
+        
+    div.container(style="margin: 20px;")
+        form(action="/productos" method="get")
+            button(type="submit") Ver listado de productos
+ 
+
+

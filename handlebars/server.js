@@ -1,32 +1,35 @@
+const { urlencoded } = require('express')
 const express = require('express')
-const {engine} = require('express-handlebars')
+const { engine } = require('express-handlebars')
 
 const app = express()
 const PORT = 8080
+
+let productos = []
 
 app.engine('handlebars', engine({
     defaultLayout: false
 }))
 
+app.use(urlencoded({extended: true}))
+
 app.set('views', './views')
 app.set('view engine', 'handlebars')
-/*
+
 app.get('/', (req, res) => {
-    const datos = {
-        nombre: 'Diego',
-        apellido: 'Quiero',
-        edad: 32,
-        email: 'diego.quiero.g90@gmail.com',
-        telefono: '962663758'
-    }
-
-    res.render('datos', datos)  
+    res.render('formAct')  
 })
-*/
 
-app.post('/ingresarProductos', (req, res) =>{
-    const nombre = req.body
-    res.redirect('/ingresarProductos')
+app.post('/productos', (req, res) =>{
+    productos.push(req.body)
+    console.log(productos)
+    res.redirect('/')
+    
+})
+
+app.get('/productos', (req, res) =>{
+    res.render('productList', {productos}) 
+    
 })
 
 const server = app.listen(PORT, () => { console.log(`Puerto ${server.address().port} escuchado correctamente`) })
