@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
         telefono: '962663758'
     }
 
-    res.render('datos', datos)
+    res.render('datos', datos)  
 })
 */
 
