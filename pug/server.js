@@ -13,13 +13,14 @@ app.set('views', './views')
 app.set('view engine', 'pug')
 
 app.get('/', (req, res) => {
-    res.render('layout.pug')  
+    res.render('formulario')  
 })
 
 app.post('/productos', (req, res) =>{
     productos.push(req.body)
     console.log(productos)
     res.redirect('/')
+
     
 })
 

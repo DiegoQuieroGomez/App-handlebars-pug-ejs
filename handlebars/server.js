@@ -7,9 +7,7 @@ const PORT = 8080
 
 let productos = []
 
-app.engine('handlebars', engine({
-    defaultLayout: false
-}))
+app.engine('handlebars', engine())
 
 app.use(urlencoded({extended: true}))
 
