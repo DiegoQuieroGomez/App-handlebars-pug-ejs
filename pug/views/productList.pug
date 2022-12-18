@@ -18,13 +18,14 @@ block tabla
                     tr
                         td: =  val.nombre
                         td: =  val.precio
-                        td: =  val.url 
+                        td 
+                            img(src=val.url style="width: 40px; heigth: 40px")
 
         else 
-            h2 Sin productos registrados
+            h2 No hay productos
 
 
     div.container
         form(action="/" method="get")
             button(type="submit") Ingresar productos
-
+            

@@ -1,23 +1,23 @@
 <h1>Listado de Productos</h1>
 <div class="container">
     {{#if productos.length}}
-        <table class="table table-dark table-striped">
+        <table class="table table-dark table-striped" style="text-align: center;">
             <tr>
-                <th>Nombre Producto</th>
-                <th>Precio</th>
-                <th>Foto Producto</th>
+                <th scope="col">Nombre Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Foto Producto</th>
             </tr>
         <br>
     {{#each productos}}
             <tr>
-                <td>{{this.nombre}}</td>
-                <td>$ {{this.precio}}</td>
-                <td>{{this.url}}</td>
+                <td scope="row">{{this.nombre}}</td>
+                <td scope="row">$ {{this.precio}}</td>
+                <td scope="row"><img src="{{this.url}}" class="img-fluid" style="width: 40px; heigth: 40px"></td>
             </tr>
     {{/each}}
         </table>
     {{else}}
-        <h2>Sin productos registrados</h2>
+        <h2>No hay productos</h2>
     {{/if}}
 </div>
 <br>
