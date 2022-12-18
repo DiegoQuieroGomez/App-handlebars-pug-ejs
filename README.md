@@ -12,9 +12,11 @@ Busqué algunas fotos de productos, ya que con los iconos muchas veces no los re
 Respecto al motor de plantillas, prefiero usar Ejs, ya que entiendo que las etiquetas "<%" es casi como un abreviado de la etiqueta "script" o "${}" en un template string.
 Ademas que el modelo de bloques es espectacular al momento de conectar las distintas vistas o elementos creados, sin mencionar la capacidad de reutilizar plantillas y conectarlas a gusto.
 
-Handelbars tambien me gusto, lo encontre muy bueno, sumado a la gran cantidad de documentacion y ejemplos que se pueden encontrar en linea. Su pagina es bastante completa ami parecer.
+Handelbars también me gustó, lo encontre muy bueno, sumado a la gran cantidad de documentacion y ejemplos que se pueden encontrar en linea. Su página es bastante completa a mi parecer.
 
-En el caso de pug, tampoco es tan complicado de usar, preturba un poco el hecho de no cerrar las etiquetas, y tuve bastantes errores asociados a indentación, lo que te obliga a tener una cultura de orden desde el inicio del código, siendo un error adicion a considerar. Este me gustó tambien, pero es el ultimo que usaría, ya que no me convence el modelo y la documentación y el acceso, si bien, buscando se encuentra, tuve que visitar bastantes foros para saber que necesitaba. Sigo sin entender bien si buscar por Jade o pug.
+En el caso de pug, tampoco es tan complicado de usar, perturba un poco el hecho de no cerrar las etiquetas, y tuve bastantes errores asociados a indentación, lo que te obliga a tener una cultura de orden desde el inicio del código(así debe ser), siendo indentar un error adicional a considerar. 
+Este me gustó tambien, pero es el último que usaría, ya que no me convence el modelo y la documentación existente, si bien, buscando se encuentra, tuve que visitar bastantes foros para saber que necesitaba. Sigo sin entender bien si buscar por Jade o pug.
+De igual forma, aclaro que sería el último de los tres en utilizar, pero sigue siendo bastante bueno y sencillo de usar.
 
-Basicamente y desde mi proceso de aprendizaje, esas serian mis impresiones al respecto!!
+Esas serian mis impresiones al respecto, considerando mi reciente inmersión en el contenido.
 
