@@ -3,7 +3,7 @@
 Hola Lucas!
 
 Te dejo un listado de productos a probar.
-Busqué algunas fotos de productos, ya que con los iconos muchas veces no los renderizaba
+Busqué algunas fotos de productos, ya que los iconos muchas veces no los renderizaba.
 
 1.- TShirt - 50 - https://img.ltwebstatic.com/images3_pi/2021/06/30/16250188702b717bd9ca6bfd8503254ac813d51014_thumbnail_600x.webp 
 2.- Jeans - 150 - https://dojiw2m9tvv09.cloudfront.net/40922/product/X_pantalon-jeans-001-hombre-18415.jpg?96
